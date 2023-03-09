@@ -1,0 +1,50 @@
+.sectionFilmes {
+    width: 100%;
+    margin-top: 4em;
+}
+
+.sectionFilmes .text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+}
+
+.sectionFilmes .text h2 {
+    color: aliceblue;
+    font-size: 3.5em;
+    margin-left: 5em;
+}
+
+.sectionFilmes .text button {
+    font-size: 1.5em;
+    color: azure;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-left: 2em;
+    padding: 0.2em 0.4em;
+}
+
+.sectionFilmes .divisoria {
+    border-radius: 20px;
+    width: 80%;
+    height: 0.2em;
+    background-color: rgba(120, 183, 255, 0.986);
+}
+
+.sectionFilmes .container {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    height: 25em;
+    margin-top: 0.5em;
+    column-gap: 0.7em;
+}
+
+.sectionFilmes .container .cardFilme {
+    width: 15em;
+    height: 20em;
+    border: 1px solid white;
+    background-color: black;
+}
