@@ -11,14 +11,23 @@ export default class destaque extends Component {
   })
     .then((Response) => Response.json())
     .then((Response) => {
+      const containerDestaqueHome = document.getElementById(
+        "containerDestaqueHome"
+      );
+
       this.setState({ ajax: Response });
       const minCardFile = document.querySelectorAll("#roleta .minCardFile");
       minCardFile.forEach((e, i) => {
         e.style.backgroundImage = `url(${Response[i].urlMinCapa})`;
       });
+      containerDestaqueHome.style.backgroundImage = `url(${Response[0].urlCapa})`;
     });
 
   toggle = (e) => {
+    const containerDestaqueHome = document.getElementById(
+      "containerDestaqueHome"
+    );
+
     const title = document.querySelector("#info .text h1");
     const describ = document.querySelector("#info .text p");
     const active = document.querySelector(".ativo");
@@ -28,9 +37,9 @@ export default class destaque extends Component {
     active.classList.remove("ativo");
     e.target.classList.add("ativo");
 
-    document.getElementById(
-      "containerDestaqueHome"
-    ).style.backgroundImage = `url(${this.state.ajax[e.target.id].urlCapa})`;
+    containerDestaqueHome.style.backgroundImage = `url(${
+      this.state.ajax[e.target.id].urlCapa
+    })`;
   };
 
   render() {

@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2c9c233.css",
-    "main.js": "/static/js/main.13cb3ed3.js",
-    "static/media/capa-one-piece.jpg": "/static/media/capa-one-piece.d681030b004d3ae6bdbe.jpg",
+    "main.css": "/static/css/main.4f6fd11c.css",
+    "main.js": "/static/js/main.e901d7d7.js",
     "index.html": "/index.html",
-    "main.b2c9c233.css.map": "/static/css/main.b2c9c233.css.map",
-    "main.13cb3ed3.js.map": "/static/js/main.13cb3ed3.js.map"
+    "main.4f6fd11c.css.map": "/static/css/main.4f6fd11c.css.map",
+    "main.e901d7d7.js.map": "/static/js/main.e901d7d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2c9c233.css",
-    "static/js/main.13cb3ed3.js"
+    "static/css/main.4f6fd11c.css",
+    "static/js/main.e901d7d7.js"
   ]
 }
