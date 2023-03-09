@@ -6,7 +6,7 @@ export default class destaque extends Component {
     ajax: [{}, {}, {}, {}],
   };
 
-  Request = fetch("http://192.168.2.118:3001/destaqueMenuHome", {
+  Request = fetch("https://server-ik1h.onrender.com/destaqueMenuHome", {
     method: "GET",
   })
     .then((Response) => Response.json())
