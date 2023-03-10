@@ -4,6 +4,7 @@ import NavigationHome from './componentes/NavigationHome'
 import DestaqueHome from './componentes/DestaqueHome'
 import SectionFilmes from './componentes/SectionFilmes'
 import Divisoria from './componentes/Divisoria'
+import './index.css'
 const root = createRoot(document.getElementById('root'))
 localStorage.clear()
 
