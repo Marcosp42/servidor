@@ -6,12 +6,16 @@ const app = express()
 const port = process.env.PORT || 3001;
 
 app.use(urlencoded({ extended: true }))
-const publicFolder = path.normalize(path.join(__dirname, '../public'))
-app.use(express.static(publicFolder))
+
+
+app.use(express.static(path.join(__dirname, '../frontEnd/build')))
+app.use('/', express.static(path.resolve(__dirname, '../frontEnd/build')))
+app.use('*', express.static(path.resolve(__dirname, '../frontEnd/build')))
 
 app.get('/destaqueMenuHome', async (req, res) => {
     res.json(await DMH.getData())
 })
+
 // app.get('/static/js/main.16a63006.js', async (req, res) => {
 //     res.sendFile(path.join(__dirname, '../public/Static/js/main.16a63006.js'))
 // })
